@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* .hammieDiv {
+        margin: auto;
+        width: 80%;
+        padding: 20px;
+      } */
+
+      .burgerDiv {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .buggyIcon {
+        opacity: 0;
+      }
+
+      #red {
+        animation: redIn 0.5s ease-in-out 2s forwards;
+      }
+
+      @keyframes redIn {
+        from {
+          -webkit-animation-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: translate3d(0, -30px, 0);
+        }
+        20%,
+        53%,
+        to {
+          -webkit-animation-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+
+        40%,
+        43% {
+          -webkit-animation-timing-function: cubic-bezier(
+            55,
+            0.05,
+            0.855,
+            0.06
+          );
+          animation-timing-function: cubic-bezier(55, 0.05, 0.855, 0.06);
+          -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+        }
+
+        70% {
+          -webkit-animation-timing-function: cubic-bezier(
+            55,
+            0.05,
+            0.855,
+            0.06
+          );
+          animation-timing-function: cubic-bezier(55, 0.05, 0.855, 0.06);
+          -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
+        }
+
+        80% {
+          -webkit-transition-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+
+        90% {
+          -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
+        }
+      }
+
+      #green {
+        animation: greenIn 0.5s ease-in-out 1s forwards;
+      }
+
+      @keyframes greenIn {
+        from {
+          -webkit-animation-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: translate3d(0, -30px, 0);
+        }
+        20%,
+        53%,
+        to {
+          -webkit-animation-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+
+        40%,
+        43% {
+          -webkit-animation-timing-function: cubic-bezier(
+            55,
+            0.05,
+            0.855,
+            0.06
+          );
+          animation-timing-function: cubic-bezier(55, 0.05, 0.855, 0.06);
+          -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+        }
+
+        70% {
+          -webkit-animation-timing-function: cubic-bezier(
+            55,
+            0.05,
+            0.855,
+            0.06
+          );
+          animation-timing-function: cubic-bezier(55, 0.05, 0.855, 0.06);
+          -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
+        }
+
+        80% {
+          -webkit-transition-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+
+        90% {
+          -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
+        }
+      }
+
+      #blue {
+        top: 40px;
+        animation: blueIn 0.5s ease-in-out forwards;
+      }
+
+      @keyframes blueIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hammieDiv">
+      <svg
+        width="43"
+        height="41"
+        viewBox="0 0 43 41"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="burger" clip-path="url(#clip0)">
+          <g class="buggyIcon" id="red">
+            <path
+              id="Vector"
+              d="M43.2592 0H-0.259277V8.36299H43.2592V0Z"
+              fill="#CC0000"
+            />
+          </g>
+          <g class="buggyIcon" id="green">
+            <path
+              id="Vector_2"
+              d="M43.2592 16.4049H-0.259277V24.7679H43.2592V16.4049Z"
+              fill="#01CC02"
+            />
+          </g>
+          <g class="buggyIcon" id="blue">
+            <path
+              id="Vector_3"
+              d="M43.2592 32.8099H-0.259277V41.1729H43.2592V32.8099Z"
+              fill="#0000CC"
+            />
+          </g>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="43" height="41" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </body>
+</html>
